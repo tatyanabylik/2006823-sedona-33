@@ -35,7 +35,7 @@
          </li >
        </ul>
       </nav>
-     <header>
+    </header>
      <main class="main-inner">
         <header class="inner-header">
              <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -50,19 +50,19 @@
         <section class="filter-products">
             <h2 class="visually-hidden">Фильтры выбора гостиницы</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
+           
                 <legend class="catalog-filter-title">Инфраструктура</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="checkbox" name="bed-head-for-men">
+                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
       
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="bed-head-for-men">
+                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
       
                     Парковка
                   </label>
@@ -75,21 +75,19 @@
                 </label>
               </li>
               </ul>
-            </fieldset>
-        </form>
-            <fieldset class="catalog-filter-group">
+
                 <legend class="catalog-filter-title">Тип жилья</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="shaving-supplies">
+                    <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
   
                 Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="care-products" checked>
+                    <input class="control-input" type="radio" name="product-group" value="care-products" >
   
                 Мотель
                   </label>
@@ -102,11 +100,9 @@
                   </label>
                 </li>
               </ul>
-
-
-            </fieldset>
-        </form>
+        
             <button class="button" type="submit">Применить</button>
+          </form>
           </section>
         </header>
       
