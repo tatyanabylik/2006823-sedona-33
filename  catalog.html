@@ -52,59 +52,60 @@
       <section class="filter-products">
         <h2 class="visually-hidden ">Фильтры выбора гостиницы</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend class="catalog-filter-title">Инфраструктура</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
 
-          <legend class="catalog-filter-title">Инфраструктура</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
 
-                Бассейн
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="bed-head-for-men">
 
-                Парковка
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="bed-head-for-men">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="catalog-filter-title">Тип жилья</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
 
-                Wi-Fi
-              </label>
-            </li>
-          </ul>
-        </form>
-        <form>
-          <legend class="catalog-filter-title">Тип жилья</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="care-products">
 
-                Гостиница
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="care-products">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="accessories">
 
-                Мотель
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="accessories">
-
-                Апартаменты
-              </label>
-            </li>
-          </ul>
-          <button class="button" type="submit">Применить</button>
-          <p><button class="button reset" type="submit">Сбросить</button></p>
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+            <button class="button" type="submit">Применить</button>
+            <p><button class="button reset" type="submit">Сбросить</button></p>
+          </fieldset>
         </form>
       </section>
     </header>
@@ -158,35 +159,47 @@
         <a class="product-card-button button" href="#">В избранное</a>
       </li>
     </ul>
-    <ul class="pagination">
+    <section>
       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-      <li class="pagination-item">
-        <a class="pagination-link pagination-prev pagination-disabled">
-          <span class="visually-hidden">Предыдущая страница</span>
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link pagination-current">1</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">2</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">3</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">4</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link pagination-next" href="#">
-          <span class="visually-hidden">Следующая страница</span>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">10</a>
-      </li>
-      </a>
-      </li>
-    </ul>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev pagination-disabled">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </li>
+         <li class="pagination-item">
+          <a class="pagination-link" href="#">10</a>
+        </li>
+      </ul>
     </section>
+  <section>
+    <form>
+      <label>Гостиниц на странице
+      <select class="select-number" >
+        <option value="show-four">4</option>
+        <option value="show-twenty">20</option>
+        <option value="show-all">все</option>
+       </select>
+      </label>
+      </form>
+  </section>
   </main>
   <footer>
     <section class="form-mailing">
@@ -219,6 +232,7 @@
           </a>
         </li>
       </ul>
+      </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <adress>
