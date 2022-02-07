@@ -9,7 +9,7 @@
 
 <body>
   <header class="page-header">
-    <img src="images/logo.svg" class="logo" alt="Логотип Sedona">
+    <img src="images/logo.svg" class="logo" width="139" height="70" alt="Логотип Sedona">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -40,14 +40,13 @@
     </nav>
   </header>
   <main class="main-index">
-    <section class="about Us">
-      <img src="images/index-background.jpg"></p>
-      <p><img src="images/divider.svg">
-        <img src="images/heder-welcome/welcome.svg" alt="Welcome">
-      <p><img src="images/heder-welcome/sedona-above.svg" alt="welcom-addition"></p>
-      <h1 class="visually-hidden">Седона</h1>
-      <img src="images/heder-welcome/tagline.svg" alt="Because the Grand Canyon sucks&excl">
-
+    <section class="about-us">
+      <div class="backgrond-welcome">
+        <p><img src="images/heder-welcome/welcome.svg" alt="Welcome"></p>
+        <p><img src="images/heder-welcome/sedona-above.svg" alt="welcom-addition"></p>
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="images/heder-welcome/tagline.svg" alt="Because the Grand Canyon sucks&excl">
+      </div>
       <p class="description">Седона — небольшой городок в Аризоне,
         заслуживающий большего!
         <br class="comparison">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</br>
@@ -61,9 +60,10 @@
           <span class="advantages-numbers">№1</span>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
             своя жизнь</p>
+          <div class="advantage-image-one"><img src="images/town.jpg" width="800" height="384" alt=""></div>
         </li>
       </ul>
-      <div><img src="images/town.jpg"></div>
+
       <ul class="advantages-list">
         <li class="advantages-item">
           <img src="images/icon-1.svg" alt="">
@@ -83,7 +83,7 @@
           <p class="advantages-description">Не только китайского,но и настоящего местного производства!</p>
         </li>
       </ul>
-      <div><img src="images/sight.jpg"></div>
+      <div class="advantage-image-two"><img src="images/sight.jpg" width="800" height="384" alt=""></div>
       <ul class="advantages-list">
         <li class="advantages-item">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
@@ -118,7 +118,6 @@
   </main>
   <footer>
     <section class="form-mailing">
-      <img src="images/footer-background.jpg"> 
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама,
         честное бойскаутское!</p>
@@ -148,17 +147,19 @@
           </a>
         </li>
       </ul>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <adress>
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </adress>
-      </section>
-      <section>
- <p class="about-text"> <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-               <img class="logo-website" src="images/logo_htmlacademy.svg" alt="логотип разработчика сайта" >
-             </a></p> 
-      </section>
+    </section>
+    <section class="footer-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <adress>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </adress>
+    </section>
+    <section class="footer-developer">
+      <h3 class="visually-hidden">Ссылка на сайт разработчика сайта</h3>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="logo-website" src="images/logo_htmlacademy.svg" alt="логотип разработчика сайта">
+      </a>
+    </section>
   </footer>
 </body>
 
