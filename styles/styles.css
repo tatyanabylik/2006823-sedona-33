@@ -139,11 +139,15 @@ body {
     border: solid;
 }
 
+
+/*
 .form-mailin h2 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    text-transform: uppercase;
 }
+*/
 
 .form-mailing p {
     font-size: 22px;
@@ -153,6 +157,7 @@ body {
 .button-mailing {
     font-size: 20px;
     line-height: 26px;
+    color: #ffffff;
     background-color: rgba(131, 179, 211, 1);
 }
 
